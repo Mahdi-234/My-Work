@@ -43,14 +43,14 @@ class Article
         else return ($this->$attr);}
          public function __set($attr,$value) {$this->$attr = $value; }
          
-    }
+    
 
     public function __toString() 
     {
       return "<tr><td>{$this->getReference}</td><td>{$this->getQuantite}</td><td>{$this->getLibelle}</td><td>{$this->getPrix}</td></tr>";
     }
 
-   
+ }
     
 
  
