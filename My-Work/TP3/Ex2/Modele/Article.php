@@ -29,7 +29,7 @@ class Article
     public function setQuantite($Quantite) {
     $this->Quantite;}
 
-    ublic function setLibelle($Libelle) {
+    public function setLibelle($Libelle) {
      $this->Libelle;}
 
      public function setPrix($Prix) {
