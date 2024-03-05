@@ -51,7 +51,7 @@ class Article
     }
 
  }
-$A=new article('a',12,az,10);
+$A=new article('a',12,'az',10);
  echo $A ;
     
 
