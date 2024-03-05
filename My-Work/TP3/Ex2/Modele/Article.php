@@ -35,8 +35,8 @@ class Article
      public function setPrix($Prix) {
      $this->Prix;}
 
-     public function setReference($Reference) {
-     $this->Reference;}
+     public function setReference($Reference)
+      { $this->Reference;}
 
     
      public function __get($attr) { if (!isset($this->$attr));
@@ -45,13 +45,20 @@ class Article
          
     
 
-    public function __toString() 
-    {
-      return "<tr><td>{$this->getReference}</td><td>{$this->getQuantite}</td><td>{$this->getLibelle}</td><td>{$this->getPrix}</td></tr>";
-    }
+         public function __toString() {
+            $s="<tr>
+            <td>{$this->Reference}</td>
+            <td>{$this->libelle}</td>
+            <td>{$this->Prix}</td>
+            <td>{$this->Quantite}</td>
+            </tr>";
+            return $s; 
+            }
+   
 
  }
-$A=new article('a',12,'az',10);
+
+ $A=new article("mahdi",12,,"mahdi",10);
  echo $A ;
     
 
